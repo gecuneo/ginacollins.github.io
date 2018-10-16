@@ -1,3 +1,7 @@
+
+
+
+
 h1 {
   color: gray;
   font-family: sans-serif;
@@ -15,13 +19,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcb7fd', end
 
 width: 300px;
 height: 150px;
-border-radius: 200px;
-margin: 20px;
+
+
 
 }
 
 body, * {
-  box-sizing: border-box
+  box-sizing: border-box;
+    --favorite: gray;
+
+
 }
 
 .clear {
@@ -35,7 +42,7 @@ margin: 0auto;
 }
 
 header {
-  background-color: pink;
+  background-color: var(--favorite, pink);
   height: 100px;
 
 }
@@ -51,7 +58,7 @@ main {
 }
 
 footer {
-  background-color: lightgray;
+  background-color: var(--favorite, pink);
   height: 100px;
 }
 
@@ -67,4 +74,5 @@ section {
   width: 660px;
   min-height: 400px;
   float: left;
+  position: relative;
 }
